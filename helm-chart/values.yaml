@@ -11,7 +11,7 @@ tlsCertsSecretName: vault-secrets-webhook-tls-certs
 image:
   repository: renanakeyless/webhook-server 
   tag: latest
-  # pullPolicy: Always
+  pullPolicy: Always
 
 
 service:
@@ -23,8 +23,13 @@ service:
 env:
   AKEYLESS_ENV: renanakeyless/akeyless-env:latest
   AKEYLESS_URL: "https://vault.akeyless.io"
-  AKEYLESS_ACCESS_ID: ""
+  AKEYLESS_ACCESS_ID: "" 
   AKEYLESS_ACCESS_TYPE: ""  # azure_ad/aws_iam
+
+ # AKEYLESS_API_GW_URL: "https://api-gw-dns"
+ # AKEYLESS_NAMESPACE_ACCESS_<ns>: "<ns-secret>"
+ # AKEYLESS_NAMESPACE_ACCESS_<ns2>: "<ns-secret2>"
+ # AKEYLESS_SECRET_DIR_NAME: "<path>"
  
 
 resources:

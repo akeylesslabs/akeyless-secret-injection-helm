@@ -21,15 +21,16 @@ service:
   internalPort: 8443
 
 env:
-  AKEYLESS_ENV: renanakeyless/akeyless-env:latest
   AKEYLESS_URL: "https://vault.akeyless.io"
   AKEYLESS_ACCESS_ID: "" 
-  AKEYLESS_ACCESS_TYPE: ""  # azure_ad/aws_iam
+  AKEYLESS_ACCESS_TYPE: ""  # azure_ad/aws_iam/api_key/universal_identity
 
  # AKEYLESS_API_GW_URL: "https://api-gw-dns"
- # AKEYLESS_NAMESPACE_ACCESS_<ns>: "<ns-secret>"
- # AKEYLESS_NAMESPACE_ACCESS_<ns2>: "<ns-secret2>"
+ # AKEYLESS_POD_ACCESS_PATH: "<location-to-access-secrets-per-pod-name>"
+ # AKEYLESS_NAMESPACE_ACCESS_PATH: "<location-to-access-secrets-per-namespace>"
+ # AKEYLESS_INIT_TOKEN: "<universal_identity_init_token>"
  # AKEYLESS_SECRET_DIR_NAME: "<path>"
+ # AKEYLESS_API_KEY: "<api_key>"
  
 
 resources:

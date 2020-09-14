@@ -38,15 +38,15 @@ The following tables lists configurable parameters of the vault-secrets-webhook 
 | ----------------------------------- | ------------------------------------------------- | -----------------------------------------|
 |affinity                             |affinities to use                                  |{}                                        |
 |debug                                |debug logs for webhook                             |false                                     |
-|image.pullPolicy                     |image pull policy                                  |IfNotPresent                              |
-|image.repository                     |image repo that contains the admission server      |innovia/vault-secrets-webhook         |
+|image.pullPolicy                     |image pull policy                                  |Always                                    |
+|image.repository                     |image repo that contains the admission server      |renanakeyless/webhook-server              |
 |image.tag                            |image tag                                          |latest                                    |
 |namespaceSelector                    |namespace selector to use, will limit webhook scope|{}                                        |
 |nodeSelector                         |node selector to use                               |{}                                        |
 |replicaCount                         |number of replicas                                 |1                                         |
 |resources                            |resources to request                               |{}                                        |
 |service.externalPort                 |webhook service external port                      |443                                       |
-|service.internalPort                 |webhook service external port                      |443                                       |
-|service.name                         |webhook service name                               |vault-secrets-webhook                     |
+|service.internalPort                 |webhook service external port                      |8443                                      |
+|service.name                         |webhook service name                               |secrets-webhook                           |
 |service.type                         |webhook service type                               |ClusterIP                                 |
 |tolerations                          |tolerations to add                                 |[]                                        |

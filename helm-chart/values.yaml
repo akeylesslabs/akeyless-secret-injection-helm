@@ -9,7 +9,7 @@ debug: false
 tlsCertsSecretName: vault-secrets-webhook-tls-certs
 
 image:
-  repository: renanakeyless/webhook-server 
+  repository: akeyless/k8s-webhook-server
   tag: latest
   pullPolicy: Always
 

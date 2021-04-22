@@ -39,7 +39,7 @@ The following tables lists configurable parameters of the vault-secrets-webhook 
 |affinity                             |affinities to use                                  |{}                                        |
 |debug                                |debug logs for webhook                             |false                                     |
 |image.pullPolicy                     |image pull policy                                  |Always                                    |
-|image.repository                     |image repo that contains the admission server      |renanakeyless/webhook-server              |
+|image.repository                     |image repo that contains the admission server      |akeyless/k8s-webhook-server               |
 |image.tag                            |image tag                                          |latest                                    |
 |namespaceSelector                    |namespace selector to use, will limit webhook scope|{}                                        |
 |nodeSelector                         |node selector to use                               |{}                                        |
